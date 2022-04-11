@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="POM Series Test Runners" verbose="4" thread-count="4"  parallel = "tests">
+    <!-- <listeners>
+        <listener class-name="Listeners.TestListener" />
+    </listeners> -->
+    
+   <!--  <parameter name ="env" value = "IT"></parameter>
+        <parameter name ="region" value = "IT"></parameter> -->
+    <test name="AccountsPageTest" >
+        <classes>
+            <class name="com.qa.opencart.tests.AccountsPageTest">
+            </class>
+        </classes>
+    </test>
+     <test name="ProductsInfoPageTest">
+        <classes>
+            <class name="com.qa.opencart.tests.ProductInfoPageTest">
+            </class>
+        </classes>
+    </test>
+     <test name="RegistrationPageTest">
+        <classes>
+            <class name="com.qa.opencart.tests.RegistrationPageTest">
+            </class>
+        </classes>
+    </test>
+     <test name="LoginPageTest">
+        <classes>
+            <class name="com.qa.opencart.tests.LoginPageTest">
+            </class>
+        </classes>
+    </test>
+  
+</suite>
