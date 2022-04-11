@@ -19,7 +19,7 @@ import com.qa.opencart.utils.Errors;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 public class DriverFactory {
-
+//git remote set-url origin https://<TOEKN>@github.com/USERNAME/REPOSITORY.git
 	public WebDriver driver;
 	public Properties prop;
 	public static String highlight;

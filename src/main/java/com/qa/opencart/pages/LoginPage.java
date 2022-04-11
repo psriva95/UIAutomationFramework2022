@@ -18,8 +18,11 @@ public class LoginPage {
 	private By loginBtn = By.xpath("//input[@value='Login']");
 	private By forgotPwd = By.linkText("Forgotten Password");
 	private By registerLink = By.linkText("Register");
-	private By loginErrorMsg = By.cssSelector("div.alert.alert-danger.alert-dismissible");
-	//public page class constructor ...
+	private By loginErrorMsg = By.cssSelector("div.alert.alert-danger.alert-dismissible");	
+	
+	//public page class constructor 
+	//addding lines of code
+	
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 		elementUtil = new ElementUtil(driver);
