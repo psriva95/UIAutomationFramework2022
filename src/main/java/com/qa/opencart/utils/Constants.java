@@ -25,6 +25,6 @@ public class Constants {
 	public static final String REGISTER_SHEET_NAME = "Register";
 	public static final String PRODUCT_SHEET_NAME = "Product";
 	
-	public static String TEST_DATA_SHEET_PATH = "./src/test/resources/testdata/DemoCartTestData.xlsx";
+	public static String TEST_DATA_SHEET_PATH = "src\\test\\resources\\testdata\\DemoCartTestData.xlsx";
 
 }

@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="POM Series Test Runners" verbose="4" thread-count="4"  parallel = "tests">
-    <!-- <listeners>
-        <listener class-name="Listeners.TestListener" />
-    </listeners> -->
-    
+  <listeners>
+		<listener
+			class-name="com.qa.opencart.listeners.ExtentReportListener" />
+		<listener
+			class-name="com.qa.opencart.listeners.TestAllureListener" />
+
+		<listener
+			class-name="com.qa.opencart.listeners.AnnotationTransformer" />
+
+	</listeners>
    <!--  <parameter name ="env" value = "IT"></parameter>
         <parameter name ="region" value = "IT"></parameter> -->
     <test name="AccountsPageTest" >
@@ -31,5 +37,9 @@
             </class>
         </classes>
     </test>
-  
+  <test name="Open Cart Login Page Negative Test">
+		<classes>
+			<class name="com.qa.opencart.tests.LoginPageNegativeTest" />
+		</classes>
+	</test>
 </suite>

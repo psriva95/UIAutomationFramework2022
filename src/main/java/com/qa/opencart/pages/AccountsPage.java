@@ -16,9 +16,9 @@ public class AccountsPage {
 	private ElementUtil elementUtil;
 	
 	private By search = By.name("search");
-	private By header = By.cssSelector("div#logo a");
-	private By acountsSecList = By.cssSelector("div#content h2");
 	private By searchBtn = By.cssSelector("div#search button");
+	private By header = By.cssSelector("div#logo a");
+	private By accSecList = By.cssSelector("div#content h2");
 	
 	public AccountsPage(WebDriver driver) {
 		this.driver = driver;
@@ -39,7 +39,7 @@ public class AccountsPage {
 	}
 	
 	public List<String> getAccountsPageSectionsList() {
-		List<WebElement> secList = elementUtil.getElements(acountsSecList);
+		List<WebElement> secList = elementUtil.getElements(accSecList);
 		List<String> accSecValList = new ArrayList<String>();
 		for(WebElement e : secList) {
 			String text = e.getText();

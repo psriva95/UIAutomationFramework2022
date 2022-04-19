@@ -52,8 +52,7 @@ public class ProductInfoPageTest extends BaseTest{
 		searchResultsPage = accountsPage.doSearch("MacBook");
 		productInfoPage = searchResultsPage.selectProduct("MacBook Pro");
 		Map<String, String> actProductInfoMap = productInfoPage.getProductInfo();
-		actProductInfoMap.forEach((k,v) -> System.out.println(k + ":" + v));
-		
+		actProductInfoMap.forEach((k,v) -> System.out.println(k + ":" + v));	
 		softAssert.assertEquals(actProductInfoMap.get("productname"), "MacBook Pro");
 		softAssert.assertEquals(actProductInfoMap.get("Brand"), "Apple");
 		softAssert.assertEquals(actProductInfoMap.get("Reward Points"), "800");

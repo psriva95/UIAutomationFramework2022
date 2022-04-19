@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.core.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -26,6 +27,7 @@ public class DriverFactory {
 	public OptionsManager optionsManager;
 	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<WebDriver>();
 //	public static final Logger log = Logger.getLogger(DriverFactory.class);
+
 	/**
 	 * This method is used to init webdriver on basis of given browser name
 	 * This will take care of local and remote execution

@@ -1,6 +1,6 @@
 package com.qa.opencart.pages;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -42,9 +42,9 @@ public class ProductInfoPage {
 	private Map<String,String> metaDataMap;
 	
 	public Map<String,String> getProductInfo() {
-		metaDataMap = new HashMap<String,String>();
-		metaDataMap.put("productName", getProductHeaderText().trim());
-		metaDataMap.put("productImagesCount", String.valueOf(getProductImagesCount()));
+		metaDataMap = new LinkedHashMap<String,String>();
+		metaDataMap.put("productname", getProductHeaderText().trim());
+		metaDataMap.put("producimagescount", String.valueOf(getProductImagesCount()));
 		getProductMetaData();
 		getProductPriceMetaData();
 		return metaDataMap;
@@ -64,8 +64,8 @@ public class ProductInfoPage {
 		List<WebElement> metaDataPriceList =elementUtil.getElements(productPriceData);
 		String price = metaDataPriceList.get(0).getText().trim();
 		String exPrice = metaDataPriceList.get(1).getText().trim();
-		metaDataMap.put("Price",price);
-		metaDataMap.put("ExTaxPrice",exPrice);
+		metaDataMap.put("price",price);
+		metaDataMap.put("extaxprice",exPrice);
 	}
 	
 }
