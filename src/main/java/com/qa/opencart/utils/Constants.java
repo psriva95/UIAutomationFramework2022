@@ -14,7 +14,6 @@ public class Constants {
 	
 	public static final List<String> ACCOUNTS_SEC_LIST = Arrays.asList("My Account",
 														"My Orders",
-														"My Affiliate Account",
 														"Newsletter");
 	
 	public static final int MACBOOK_PRODUCT_COUNT = 3;
