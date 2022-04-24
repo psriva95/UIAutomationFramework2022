@@ -1,0 +1,49 @@
+pipeline {
+    
+    agent any
+    stages {
+        
+        stage("Build"){
+            steps {
+                echo("Build Project")
+            }
+        }
+         stage("Run UTs"){
+            steps {
+                echo("Run Unit Test Cases")
+            }
+        }
+          stage("Deploy to Dev"){
+            steps {
+                echo("Dev Deployment")
+            }
+        }
+          stage("Deploy to QA"){
+            steps {
+                echo("QA Deployment")
+            }
+        }
+          stage("Run Automation Reg Tests"){
+            steps {
+                echo("Running test cases")
+            }
+        }
+          stage("Deploy to Stage"){
+            steps {
+                echo("Stage Deployment")
+            }
+        }
+            stage("Run Automation Sanity Tests"){
+            steps {
+                echo("Running test cases")
+            }
+        }
+         stage("Deploy to Prod"){
+            steps {
+                echo("Prod Deployment")
+            }
+        }
+    }
+    
+    
+}
