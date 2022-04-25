@@ -22,7 +22,7 @@
 		</classes>
 	</test>
 	
-	<test name="Open Cart Login Page Test _ firefox">
+<!-- 	<test name="Open Cart Login Page Test _ firefox">
 
 		<parameter name="browser" value="firefox" />
 <parameter name="browserversion" value="83.0" />
@@ -38,6 +38,6 @@
 		<classes>
 			<class name="com.qa.opencart.tests.LoginPageNegativeTest" />
 		</classes>
-	</test>
+	</test> -->
 	
 </suite>
