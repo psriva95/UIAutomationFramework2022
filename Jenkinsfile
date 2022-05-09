@@ -26,7 +26,7 @@ pipeline
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     git 'https://github.com/psriva95/UIAutomationFramework2022.git'
-                    sh "mvn clean install"
+                    bat "mvn clean install"
                     
                 }
             }
